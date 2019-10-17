@@ -1,0 +1,17 @@
+@font-face {
+  font-family: myGoogleFont;
+  src: url('./assets/fonts/GoogleSans-Regular.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: myGoogleFont !important;
+  background-color:#e5eff1 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
