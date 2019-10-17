@@ -6,6 +6,8 @@ import './App.css';
 
 import Navbar from './components/layouts/Navbar';
 import Users from './components/users/Users';
+
+
 import Search from './components/users/search';
 import ErrorMsg from './components/layouts/ErrMsgAlert';
 import About from './components/Pages/AboutUs';
