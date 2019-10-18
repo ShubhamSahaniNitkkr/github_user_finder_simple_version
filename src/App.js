@@ -13,6 +13,7 @@ import ErrorMsg from './components/layouts/ErrMsgAlert';
 import About from './components/Pages/AboutUs';
 import Profile from './components/users/Profile';
 
+import GithubState from './context/github/GithubState';
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -70,28 +71,30 @@ const App = () => {
   }
 
   return (
-    <Router>
-      <React.Fragment>
-        {/* {console.log(process.env.REACT_APP_PROJECT_NAME)}
+    <GithubState>
+      <Router>
+        <React.Fragment>
+          {/* {console.log(process.env.REACT_APP_PROJECT_NAME)}
         {console.log(process.env.REACT_APP_PURPOSE)} */}
-        <Navbar title='Github Finder' />
-        <div className="container-fluid mt-5 pt-5">
-          <ErrorMsg errMsg={errMsg} hideErrMsg={hideErrMsg} />
-          <Switch>
-            <Route exact path="/" render={props => (
-              <React.Fragment>
-                <Search searchUsers={searchUsers} errMsgFn={errMsgFn} />
-                <Users loading={loading} users={users} />
-              </React.Fragment>
-            )} />
-            <Route exact path="/aboutus" component={About} />
-            <Route exact path="/profile/:login" render={props => (
-              <Profile {...props} getProfile={getProfile} user={user} getProfileRepos={getProfileRepos} repos={repos} loading={loading} />
-            )} />
-          </Switch>
-        </div>
-      </React.Fragment >
-    </Router>
+          <Navbar title='Github Finder' />
+          <div className="container-fluid mt-5 pt-5">
+            <ErrorMsg errMsg={errMsg} hideErrMsg={hideErrMsg} />
+            <Switch>
+              <Route exact path="/" render={props => (
+                <React.Fragment>
+                  <Search searchUsers={searchUsers} errMsgFn={errMsgFn} />
+                  <Users loading={loading} users={users} />
+                </React.Fragment>
+              )} />
+              <Route exact path="/aboutus" component={About} />
+              <Route exact path="/profile/:login" render={props => (
+                <Profile {...props} getProfile={getProfile} user={user} getProfileRepos={getProfileRepos} repos={repos} loading={loading} />
+              )} />
+            </Switch>
+          </div>
+        </React.Fragment >
+      </Router>
+    </GithubState>
   );
 }
 
