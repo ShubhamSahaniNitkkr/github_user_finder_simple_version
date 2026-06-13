@@ -37,7 +37,7 @@ const Profile = ({
       <div className="card-columns ">
         <div
           className="card bg-light shadow p-3 mb-5 bg-white rounded"
-          style={{ maxWidth: "100%%", margin: "auto" }}
+          style={{ maxWidth: "100%", margin: "auto" }}
         >
           <div className="card-header">Profile</div>
           <div className="card-body">

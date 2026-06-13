@@ -28,8 +28,6 @@ Minimal GitHub user lookup — a beginner-friendly version focused on search and
 npm install && npm run dev
 ```
 
-> On Node 17+, if build fails: `export NODE_OPTIONS=--openssl-legacy-provider`
-
 ## Live Demo
 
 [https://shubhamsahaniNitkkr.github.io/old-basic-projects/projects/github_user_finder_simple_version/](https://shubhamsahaniNitkkr.github.io/old-basic-projects/projects/github_user_finder_simple_version/)

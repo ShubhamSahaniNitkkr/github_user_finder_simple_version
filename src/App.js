@@ -75,7 +75,7 @@ const App = () => {
       <Router basename={getBasename()}>
         <React.Fragment>
           <Navbar title='Github Finder' />
-          <div className="container-fluid mt-5 pt-5">
+          <div className="container-fluid mt-5 pt-5 github-app-shell">
             <ErrorMsg errMsg={errMsg} hideErrMsg={hideErrMsg} />
             <Switch>
               <Route exact path="/" render={props => (

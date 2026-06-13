@@ -1,0 +1,27 @@
+/* App-level layout helpers */
+.github-app-shell {
+  min-height: 100vh;
+}
+
+.card-text,
+.list-group-item {
+  word-break: break-word;
+}
+
+.profile-avatar {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .container-fluid.mt-5.pt-5 {
+    margin-top: 4.5rem !important;
+    padding: 1rem !important;
+  }
+
+  .d-flex.flex-row-reverse {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
