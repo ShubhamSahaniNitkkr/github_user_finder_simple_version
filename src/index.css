@@ -1,3 +1,8 @@
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+body { overflow-x: hidden; }
+@media (max-width: 768px) { .container { padding: 0 12px; } }
+
 @font-face {
   font-family: myGoogleFont;
   src: url('./assets/fonts/GoogleSans-Regular.ttf');
@@ -14,4 +19,15 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media (max-width: 768px) {
+  .container-fluid.mt-5.pt-5 {
+    margin-top: 4rem !important;
+    padding: 0 12px;
+  }
+
+  .card-columns {
+    column-count: 1 !important;
+  }
 }

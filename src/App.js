@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// import logo from './logo.svg';
 import Axios from 'axios';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
@@ -14,6 +13,7 @@ import About from './components/Pages/AboutUs';
 import Profile from './components/users/Profile';
 
 import GithubState from './context/github/GithubState';
+import getBasename from './getBasename';
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -72,10 +72,8 @@ const App = () => {
 
   return (
     <GithubState>
-      <Router>
+      <Router basename={getBasename()}>
         <React.Fragment>
-          {/* {console.log(process.env.REACT_APP_PROJECT_NAME)}
-        {console.log(process.env.REACT_APP_PURPOSE)} */}
           <Navbar title='Github Finder' />
           <div className="container-fluid mt-5 pt-5">
             <ErrorMsg errMsg={errMsg} hideErrMsg={hideErrMsg} />
