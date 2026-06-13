@@ -2,7 +2,8 @@
 
 > Minimal GitHub user lookup — a beginner-friendly version focused on search and profile display.
 
-![Screenshot](./screenshot.png)
+<img width="2233" height="1170" alt="image" src="https://github.com/user-attachments/assets/2070dda8-c313-40a5-b77c-c9aba7777922" />
+
 > Add `screenshot.png` in project root for preview.
 
 ## Purpose
